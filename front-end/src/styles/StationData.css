@@ -1,0 +1,57 @@
+.station-data-container {
+  margin: 20px;
+}
+
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e88e5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.table-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-header-cell {
+  background-color: #1e88e5;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  font-size: 22px !important;
+  text-align: left !important;
+  padding: 12px !important;
+}
+
+.table-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-cell {
+  padding: 12px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.table-cell-bikes-available {
+  font-weight: bold;
+}
+
+.bikes-available {
+  color: #1e88e5 !important;
+}
+
+.bikes-unavailable {
+  color: #d32f2f !important;
+}
+
+.docks-available {
+  color: #1e88e5 !important;
+}
+
+.docks-unavailable {
+  color: #d32f2f !important;
+}
