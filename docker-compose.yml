@@ -6,9 +6,11 @@ services:
       context: ./front-end
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:3000" # Expose React app on localhost:3000
     depends_on:
-      - backend
+      - backend # Ensure backend runs first
+    environment:
+      - REACT_APP_API_URL=http://backend:5000/api # Backend service hostname for API
     stdin_open: true
     tty: true
 
@@ -17,6 +19,6 @@ services:
       context: ./back-end
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "5000:5000" # Expose Flask API on localhost:5000
     stdin_open: true
     tty: true

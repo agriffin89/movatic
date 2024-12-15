@@ -1,8 +1,7 @@
-// src/routes.tsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage.tsx";
-import StationDetails from "./pages/StationsDetail.tsx";
+import HomePage from "./pages/HomePage";
+import StationDetails from "./pages/StationsDetail";
 
 const AppRoutes: React.FC = () => {
   return (

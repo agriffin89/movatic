@@ -17,10 +17,11 @@ const StationDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [station, setStation] = useState<StationDetail | null>(null);
   const [loading, setLoading] = useState(true);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:5000/api/stations`)
+      .get(`${API_URL}/stations`)
       .then((response) => {
         const stations = response.data.data.stations;
         const selectedStation = stations.find(
@@ -32,7 +33,7 @@ const StationDetails: React.FC = () => {
       .catch((error) =>
         console.error("Error fetching station details:", error)
       );
-  }, [id]);
+  }, [API_URL, id]);
 
   if (loading) return <CircularProgress />;
 
