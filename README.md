@@ -1,4 +1,4 @@
-# Bike Share Station Viewer
+# Bike Share Operaror Station.
 
 This project allows users to view bike share station data, including the availability of bikes and docks, using the **MDS/GBFS feeds**. It includes both a front-end and back-end, running using Docker.
 
